@@ -1,15 +1,22 @@
 public class People {
 
-	private String name;
+	private String firstName;
 	private String familyName;
 
-	public People(name, familyName) {
-		this.name = name;
+	private String birthday;
+
+	public People(firstName, familyName, birthday) {
+		this.firstName = firstName;
 		this.familyName = familyName;
+		this.birthday = birthday;
 	}
 
 	@Override
     public String toString() {
-        return name + " " + familyName;
+        return firstName + " " + familyName;
+    }
+
+    public String getBirthday() {
+    	return birthday;
     }
 }
